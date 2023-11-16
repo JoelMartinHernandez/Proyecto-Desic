@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Lines from './pages/lines/Lines';
+import {
+  Route,
+  Routes,
+  BrowserRouter
+} from 'react-router-dom';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import UpdateLine from './components/updateLine/UpdateLine';
+import AddLine from './components/addLine/AddLine';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Lines />}/>
+        <Route path="/add" element={<AddLine />}/>
+        <Route path="/update" element={<UpdateLine />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

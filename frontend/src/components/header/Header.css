@@ -1,0 +1,28 @@
+.body{
+    background-color: #038C7F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageTitle{
+display: flex;
+justify-content:center;
+align-items:center;
+height: 15vh;
+font-size:1em;
+text-shadow: 4px 6px 9px rgba(0,0,0,.5);
+background-position: right bottom;
+width: 100%;
+}
+
+.dropdown{
+display: flex;
+justify-content:center;
+align-items:center;
+}
+
+.options{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}

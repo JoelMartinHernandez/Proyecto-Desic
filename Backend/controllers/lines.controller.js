@@ -56,6 +56,7 @@ exports.update = (req, res) => {
 // Delete a line with the specified id in the request
 exports.delete = (req, res) => {
     const id = req.params.id;
+    console.log(id.value)
     Line.destroy({ where: { id: id } }).then(data => {
       res.send({ message: "se elimino correctamente" });
     }).catch(err => {
