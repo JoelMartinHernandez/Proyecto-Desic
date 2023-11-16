@@ -1,8 +1,8 @@
 .menuBody{
-background-color: black;
-color: white;
+background-color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);
 }
 
 .menuBody>p{
-color: white;
+color: rgb(0, 0, 0);
     }

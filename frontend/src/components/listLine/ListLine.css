@@ -1,0 +1,16 @@
+.listBody{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.elementBody{
+    background-color: #3D505D;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    column-count: 1;
+    column-gap: 10px;
+    color: yellow;
+    border: 3px solid #688CA4;
+}

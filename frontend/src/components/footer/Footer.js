@@ -2,7 +2,7 @@ import './Footer.css'
 
 function Footer() {
     return (
-      <div className="body">
+      <div className="bodyFooter">
         <div className="lines">
           {/* <img src={y} alt="Líneas" /> */}
           <p>Líneas</p>

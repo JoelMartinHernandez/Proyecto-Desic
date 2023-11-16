@@ -1,3 +1,4 @@
+import "./ListLine.css";
 import React, { useState, useEffect } from "react";
 import LineService from "../../services/linesServices/LineService";
 import { useNavigate } from "react-router-dom";
@@ -39,13 +40,13 @@ const updateLine=(l)=>{
 }
 
   return (
-    <div>
+    <div className="listBody">
       {lines.map((l,index)=>{
         return(
-          <div key={index}>
+          <div key={index} className="elementBody">
             <h3>línea:{l.number}</h3>
-            <p>{l.firstStop}</p>
-            <p>{l.lastStop}</p>
+            <p>{l.firstStop} - {l.lastStop}</p>
+            <p></p>
             <button onClick={()=>deleteLine(l.id)}>Eliminar</button>
             <button onClick={()=>updateLine(l)}>Actualizar</button>
           </div>

@@ -4,7 +4,7 @@ import options from '../../assets/icons/options.svg';
 
 function Header() {
   return (
-    <div className="body">
+    <div className="bodyHeader">
       <div className="dropdown">
         <img src={dropdown} alt="Barra desplegable" />
       </div>

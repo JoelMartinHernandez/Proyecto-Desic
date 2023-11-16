@@ -1,8 +1,9 @@
-.body{
-    background-color: #038C7F;
+.bodyHeader{
+    background-color: #b6d101;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 .pageTitle{
 display: flex;
