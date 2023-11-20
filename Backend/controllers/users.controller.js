@@ -140,20 +140,3 @@ exports.findOne = (req, res) => {
       });
     });
   };
-
-  //Find user by username and password
-  exports.findUserByUsernameAndPassword = (req, res) => {
-    const user = req.body.username;
-    const pwd = req.body.password;
-
-    User.findOne({where: {username:user, password:pwd}})
-    .then(data => {
-      res.send(data);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while retrieving users"
-      });
-    });
-  };
