@@ -21,5 +21,5 @@ module.exports = app => {
   // Delete a line with id
   router.delete("/:id", lines.delete);
 
-  app.use("/api/lines", router);
+  app.use("/api/line", router);
 }
