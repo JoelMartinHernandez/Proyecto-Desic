@@ -1,12 +1,11 @@
 import'./Home.css'
+import'../../components/registerForm/RegisterForm'
+
 function Home(){
 
     return(
         <>
-            <div className="pepe">
-                <p></p>
-            </div>
-            <p>hola</p>
+            <p>Home</p>
         </>
     );
 }
