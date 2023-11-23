@@ -1,3 +1,4 @@
+import "./LoginForm.css";
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import UsersService from "../../services/usersService/UsersService";
@@ -50,8 +51,8 @@ AuthService.login(data)
 };
 
 return (
-    <div>
-      <div className="form-group">
+    <div className="bodyLogin">
+      <div className="form-group-first">
         <label htmlFor="username">Nombre de usuario</label>
         <input
           type="text"
