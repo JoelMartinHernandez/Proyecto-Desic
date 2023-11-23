@@ -1,4 +1,5 @@
 import axios from "axios";
+import { jwtDecode } from 'jwt-decode';
 
 const endpoint = "http://localhost:8080/api/users";
 
@@ -17,8 +18,19 @@ const getOptions = (user) => {
   return options;
 }
 
+function setTokenOptions() {
+  const token = localStorage.getItem("token");
+
+  let options = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    }
+  }
+
+  return options;
+}
+
 const register = async (user) => {
-  console.log("aaa")
   try {
     const body = new URLSearchParams();
     body.append('name', user.name);
@@ -47,24 +59,45 @@ const login = async (user) => {
 };
 
 async function logout() {
-  await this.storage.remove("token");
+  await localStorage.remove("token");
 }
 
+export function getMyRole() {
+  const token = localStorage.getItem("token")
+  const tokenMas = jwtDecode(token)
+  return tokenMas.discriminator
+}
 
-
-async function isLoggedIn() {
-  // return this.authSubject.asObservable();
-  let token = await this.storage.get("token");
-  if (token) { //Just check if exists. This should be checked with current date
-    return true;
+const isLoggedIn = ()=> {
+  const token = localStorage.getItem("token")
+  if (token) {
+    return true
   }
-  return false;
+  else {
+    return false
+  }
 }
 
+const navigateByRole = (role, navigate) => {
+  console.log(role)
+  switch (role) {
+    case 'administrator':
+      navigate('/home');
+      break;
+    case 'user':
+      navigate('/user/home');
+      break;
+    default:
+      navigate('/')
+      break;
+  }
+}
 
 export default {
-  isLoggedIn,
-  logout,
-  login,
   register,
+  login,
+  logout,
+  isLoggedIn,
+  getMyRole,
+  navigateByRole
 };

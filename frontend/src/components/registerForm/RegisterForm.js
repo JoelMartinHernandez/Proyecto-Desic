@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import UsersService from "../../services/usersService/UsersService";
 import AuthService from "../../services/usersService/AuthService";
+import { RolesContext } from "../../context/roles";
 
 const RegisterForm = () => {
   const navigate = useNavigate()
+  const rolesContext=useContext(RolesContext)
 
   const initialUserState = {
     id: null,
@@ -41,7 +43,11 @@ const RegisterForm = () => {
         });
         setSubmitted(true);
         // UsersService.getAll()
-        navigate("/home")
+        rolesContext.role=response.data.user.discriminator
+        console.log(rolesContext, response.data.user.discriminator)
+        
+        AuthService.navigateByRole(rolesContext.role,navigate);
+        window.location.reload();
       })
   };
 
