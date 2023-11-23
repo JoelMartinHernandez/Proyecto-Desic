@@ -1,6 +1,6 @@
+import "./RegisterForm.css"
 import React, { useContext, useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
-import UsersService from "../../services/usersService/UsersService";
+import { useNavigate } from "react-router-dom";
 import AuthService from "../../services/usersService/AuthService";
 import { RolesContext } from "../../context/roles";
 
@@ -42,7 +42,6 @@ const RegisterForm = () => {
           published: response.data.published
         });
         setSubmitted(true);
-        // UsersService.getAll()
         rolesContext.role=response.data.user.discriminator
         console.log(rolesContext, response.data.user.discriminator)
         
@@ -52,8 +51,8 @@ const RegisterForm = () => {
   };
 
   return (
-    <div>
-      <div className="form-group">
+    <div className="bodyRegister">
+      <div className="form-group-first">
         <label htmlFor="name">Nombre</label>
         <input
           type="text"
