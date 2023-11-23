@@ -1,12 +1,16 @@
 import'./Home.css'
+import'../../components/registerForm/RegisterForm'
+import { useNavigate } from 'react-router-dom';
+
 function Home(){
+
+    const navigate = useNavigate();
+
 
     return(
         <>
-            <div className="pepe">
-                <p></p>
-            </div>
-            <p>hola</p>
+            <p>Home</p>
+            <button onClick={()=>navigate("/Line")}></button>
         </>
     );
 }

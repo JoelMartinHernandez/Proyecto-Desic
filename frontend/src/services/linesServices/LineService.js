@@ -1,5 +1,5 @@
 import axios from 'axios';
-const endpont = "http://localhost:8080/api/lines";
+const endpont = "http://localhost:8080/api/line";
 
 const getAll = () => {
   return axios.get(endpont);
