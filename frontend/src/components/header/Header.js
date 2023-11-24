@@ -5,15 +5,15 @@ import options from '../../assets/icons/options.svg';
 function Header() {
   return (
     <div className="bodyHeader">
-      <div className="dropdown">
+      {/* <div className="dropdown">
         <img src={dropdown} alt="Barra desplegable" />
-      </div>
+      </div> */}
       <div className="pageTitle">
-        <h1>Proyecto</h1>
+        <h1>Líneas</h1>
       </div>
-      <div className="options">
+      {/* <div className="options">
         <img src={options} alt="Opciones" />
-      </div>
+      </div> */}
     </div>
   );
 }
