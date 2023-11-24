@@ -1,3 +1,6 @@
+import "./AddLine.css";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 import React, { useState } from "react";
 import LineService from "../../services/linesServices/LineService";
 import { useNavigate } from "react-router-dom";
@@ -49,7 +52,9 @@ const AddLine = () => {
 // };
 
 return (
-    <div>
+  <div>
+    <Header/>
+    <div className="bodyAddLine">
       <div className="form-group">
         <label htmlFor="number">Número</label>
         <input
@@ -88,11 +93,13 @@ return (
           name="lastStop"
         />
       </div>
-
+    
       <button onClick={saveLine} className="btn btn-success">
         Submit
       </button>
     </div>
+    <Footer/>
+  </div>
   )}
 
 

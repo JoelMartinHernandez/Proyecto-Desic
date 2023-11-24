@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import "./UpdateLine.css";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 import LineService from "../../services/linesServices/LineService";
 import { useNavigate } from "react-router-dom";
 
@@ -43,7 +46,9 @@ const UpdateLine = () => {
     }
 
     return (
-        <div>
+      <div>
+        <Header/>
+        <div className="bodyUpdateLine">
           <div className="form-group">
             <label htmlFor="number">Número</label>
             <input
@@ -87,6 +92,8 @@ const UpdateLine = () => {
             Submit
           </button>
         </div>
+        <Footer/>
+      </div>
       )}
     
     
