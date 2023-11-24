@@ -1,0 +1,30 @@
+.bodyUpdateLine{
+    background-color: #3D505D;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 35%;
+}
+
+.form-group{
+    color: white;
+}
+
+.btn-success{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    background-color: green;
+    color: white;
+    border:0;
+}
+
+.btn-denegade{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    background-color: red;
+    color: white;
+    border:0;
+}

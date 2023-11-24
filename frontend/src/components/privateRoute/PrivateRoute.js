@@ -11,7 +11,6 @@ const PrivateRoute = (props) => {
 
   const checkRole = () => {
     const role = rolesContext.role;
-    console.log(props.logged)
     if (!props.logged) {
       navigate('/');
       return false;

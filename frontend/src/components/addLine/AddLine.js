@@ -1,6 +1,10 @@
+import "./AddLine.css";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 import React, { useState } from "react";
 import LineService from "../../services/linesServices/LineService";
 import { useNavigate } from "react-router-dom";
+import { Button } from 'antd';
 
 const AddLine = () => {
   const navigate=useNavigate()
@@ -37,7 +41,7 @@ const AddLine = () => {
       });
       setSubmitted(true);
       LineService.getAll()
-      navigate("/")
+      navigate("/Line")
       // console.log(response.data);
     })
 };
@@ -49,7 +53,9 @@ const AddLine = () => {
 // };
 
 return (
-    <div>
+  <div>
+    <Header/>
+    <div className="bodyAddLine">
       <div className="form-group">
         <label htmlFor="number">Número</label>
         <input
@@ -88,11 +94,16 @@ return (
           name="lastStop"
         />
       </div>
-
-      <button onClick={saveLine} className="btn btn-success">
-        Submit
-      </button>
+    
+      <Button onClick={saveLine} className="btn btn-success">
+        Guardar
+      </Button>
+      <Button onClick={()=>navigate("/Line")} className="btn-denegade">
+        Cancelar
+      </Button>
     </div>
+    <Footer/>
+  </div>
   )}
 
 
