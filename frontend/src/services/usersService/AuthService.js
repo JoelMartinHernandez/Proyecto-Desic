@@ -79,13 +79,12 @@ const isLoggedIn = ()=> {
 }
 
 const navigateByRole = (role, navigate) => {
-  console.log(role)
   switch (role) {
     case 'administrator':
-      navigate('/home');
+      navigate('/Line');
       break;
     case 'user':
-      navigate('/user/home');
+      navigate('/user/line');
       break;
     default:
       navigate('/')

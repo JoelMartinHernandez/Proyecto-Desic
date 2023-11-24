@@ -22,7 +22,7 @@ function App() {
 
   const logged = AuthService.isLoggedIn();
   const roles = useContext(RolesContext);
-  console.log(logged);
+
 
   if (logged) {
     const newRole = AuthService.getMyRole();
@@ -38,11 +38,11 @@ function App() {
       <Route path="/register" element={<Register/>} />
       <Route path="/login" element={<Login/>} />
       <Route element={<PrivateRoute permittedRole='administrator' logged={logged} />}>
-        <Route path="/home" element={<Home/>} />
         <Route path="/Line" element={<Lines/>} />
+        <Route path="/addLine" element={<AddLine/>} />
+        <Route path="/update" element={<UpdateLine/>}/>
       </Route>
       <Route element={<PrivateRoute permittedRole='user' logged={logged} />}>
-        <Route path="/user/home"/>
         <Route path="/user/line"/>
       </Route>
 
