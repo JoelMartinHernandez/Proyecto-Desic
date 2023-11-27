@@ -25,7 +25,16 @@ fs
   });
 
   db.User = require("./users.model")(sequelize,Sequelize)
+  db.Lines = require("./lines.model")(sequelize,Sequelize)
+  db.Schedule = require("./schedule.model")(sequelize,Sequelize)
   
+//line has one schedule
+db.Lines.hasOne(db.Schedule,{foreignKey:'idLine'})
+
+ db.Schedule.belongsTo(db.Lines, {
+  foreignKey: "idLine",
+ });
+
   db.sequelize = sequelize;
   db.Sequelize = Sequelize;
   
