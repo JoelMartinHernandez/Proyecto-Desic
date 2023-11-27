@@ -71,6 +71,7 @@ app.use(function (req, res, next) {
 
 require("./routes/lines.routes.js")(app);
 require("./routes/users.routes.js")(app);
+require("./routes/schedules.routes.js")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

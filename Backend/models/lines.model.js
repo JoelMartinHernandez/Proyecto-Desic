@@ -9,6 +9,8 @@ module.exports = (sequelize, Sequelize) => {
       lastStop: {
         type: Sequelize.STRING
       },
+      // cuando termine el backend bien
+      // quitar de line el filename y pasarlo a busStop
       filename: {
         type: Sequelize.STRING
       }
