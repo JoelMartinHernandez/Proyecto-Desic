@@ -9,7 +9,7 @@ module.exports = app => {
         router.post("/", schedules.create);
   
         // Retrieve all schedules
-        router.get("/", schedules.findAll);
+        router.get("/:idLine", schedules.findAll);
     
         // Update a schedules with id
         router.put("/:id", schedules.update);

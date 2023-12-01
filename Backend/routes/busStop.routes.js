@@ -10,7 +10,7 @@ module.exports = app => {
   router.post("/", upload.single('file'), busStop.create);
 
   // Retrieve all lines
-  router.get("/", busStop.findAll);
+  router.get("/:idLine", busStop.findAll);
 
   // Retrieve a single line with id
   // router.get("/:id", lines.findOne);

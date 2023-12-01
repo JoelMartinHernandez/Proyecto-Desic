@@ -52,10 +52,11 @@ const updateLine=(l)=>{
     <div className="listBody">
       {lines.map((l,index)=>{
         return(
-          <div key={index} className="elementBody">
+          <div key={index} className="elementBody" >
+            <div className="buttonSchedule" onClick={()=>navigate(`/Line/${l.id}/schedule`)}>
             <h3>línea:{l.number}</h3>
             <p>{l.firstStop} - {l.lastStop}</p>
-            <p></p>
+            </div>
             <Popconfirm
               title="Eliminar Linea"
               description="Estas seguro de que quieres eliminar esta linea?"
