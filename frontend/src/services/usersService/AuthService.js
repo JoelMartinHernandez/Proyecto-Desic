@@ -59,7 +59,7 @@ const login = async (user) => {
 };
 
 async function logout() {
-  await localStorage.remove("token");
+  await localStorage.removeItem("token");
 }
 
 export function getMyRole() {

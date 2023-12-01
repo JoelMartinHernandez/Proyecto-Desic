@@ -8,6 +8,7 @@ exports.create = (req, res) => {
     HourAndMinutes: req.body.HourAndMinutes,
     idLine: req.body.idLine
   }
+  console.log(schedule)
 
   // Save Line in the database
   Schedule.create(schedule).then(data => {
@@ -21,7 +22,10 @@ exports.create = (req, res) => {
 
 // Retrieve all Schedule from the database.
 exports.findAll = (req, res) => {
-    Schedule.findAll().then(data => {
+  console.log(req.params)
+    Schedule.findAll({where:{
+      idLine:req.params.idLine
+    }}).then(data => {
       res.send(data);
     }).catch(err => {
       res.status(500).send({
@@ -34,7 +38,7 @@ exports.findAll = (req, res) => {
 exports.update = (req, res) => {  
     const schedule = {
         HourAndMinutes: req.body.HourAndMinutes,
-        idLine: req.body.HourAndMinutes
+        idLine: req.body.idLine
     }
     const id = req.params.id;
   

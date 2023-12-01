@@ -8,7 +8,6 @@ exports.create = (req, res) => {
     number: req.body.number,
     firstStop: req.body.firstStop,
     lastStop: req.body.lastStop,
-    filename: req.file ? req.file.filename : ""
   }
 
   // Save Line in the database
@@ -38,7 +37,6 @@ exports.update = (req, res) => {
         number: req.body.number,
         firstStop: req.body.firstStop,
         lastStop: req.body.lastStop,
-        filename: req.file ? req.file.filename : ""
     }
     const id = req.params.id;
   

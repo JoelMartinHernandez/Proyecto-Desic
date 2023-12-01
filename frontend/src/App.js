@@ -17,6 +17,12 @@ import Lines from "./pages/lines/Lines";
 import Register from './pages/auth/register/Registe';
 import Login from './pages/auth/login/Login';
 import RegisterOrLogin from './components/registreOrLogin/RegistreOrLogin';
+import Schedule from "./pages/schedule/Schedule";
+import AddSchedule from "./components/scheduleAdd/ScheduleAdd";
+import UpdateSchedule from "./components/scheduleUpdate/ScheduleUpdate";
+import BusStopList from "./components/busStopList/BusStopList";
+import AddBusStop from "./components/busStopAdd/BusStopAdd";
+import UpdateBusStop from "./components/busStopUpdate/BusStopUpdate";
 
 function App() {
 
@@ -39,6 +45,12 @@ function App() {
       <Route path="/login" element={<Login/>} />
       <Route element={<PrivateRoute permittedRole='administrator' logged={logged} />}>
         <Route path="/Line" element={<Lines/>} />
+        <Route path='/Line/:idLine/schedule' element={<Schedule/>} />
+        <Route path="/Line/:idLine/addSchedule" element={<AddSchedule/>} />
+        <Route path="/Line/:idLine/updateSchedule" element={<UpdateSchedule/>} />
+        <Route path="/Line/:idLine/listBusStop" element={<BusStopList/>} />
+        <Route path="/Line/:idLine/addBusStop" element={<AddBusStop/>}/>
+        <Route path="/Line/:idLine/updateBusStop" element={<UpdateBusStop/>} />
         <Route path="/addLine" element={<AddLine/>} />
         <Route path="/update" element={<UpdateLine/>}/>
       </Route>

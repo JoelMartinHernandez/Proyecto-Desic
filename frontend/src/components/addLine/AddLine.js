@@ -4,15 +4,16 @@ import Footer from "../../components/footer/Footer";
 import React, { useState } from "react";
 import LineService from "../../services/linesServices/LineService";
 import { useNavigate } from "react-router-dom";
-import { Button } from 'antd';
+import { Button, notification, Space } from "antd";
 
 const AddLine = () => {
+  const [api, contextHolder] = notification.useNotification();
   const navigate=useNavigate()
     const initialLineState = {
         id: null,
-        number: "",
-        firstStop: "",
-        lasttStop: "",
+        number: null,
+        firstStop: null,
+        lastStop: null,
         published: false
     };
     const [line, setLine] = useState(initialLineState);
@@ -29,7 +30,13 @@ const AddLine = () => {
             firstStop: line.firstStop,
             lastStop: line.lastStop
     }; 
+    const numberD =line.number
+    const firstStopD =line.firstStop
+    const lastStopD =line.lastStop
 
+    if(numberD === null|| numberD === '' || firstStopD === null || firstStopD === '' || lastStopD === null || lastStopD === ''){
+      notification.error({message:'error',description:'rellena todos los campos', duration: 5})
+    }else{
     LineService.create(data)
     .then(response => {
       setLine({
@@ -44,13 +51,9 @@ const AddLine = () => {
       navigate("/Line")
       // console.log(response.data);
     })
+  }
 };
 
-
-// const newLine = () => {
-//     setLine(initialLineState);
-//     setSubmitted(false);
-// };
 
 return (
   <div>

@@ -1,7 +1,8 @@
 module.exports = (sequelize, Sequelize) => {
     const Schedule = sequelize.define("schedule", {
       HourAndMinutes: {
-        type: Sequelize.TIME
+        type: Sequelize.TIME,
+        allowNull:false
       },
       idLine: {
         type: Sequelize.INTEGER,

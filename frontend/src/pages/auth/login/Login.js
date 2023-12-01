@@ -8,7 +8,6 @@ function Login() {
 
   const logged = AuthService.isLoggedIn();
   const rolesContext = useContext(RolesContext);
-  console.log(rolesContext)
   const navigate = useNavigate();
 
   useEffect(() => {

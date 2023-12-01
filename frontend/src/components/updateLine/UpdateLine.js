@@ -41,6 +41,13 @@ const UpdateLine = () => {
       firstStop: line.firstStop,
       lastStop: line.lastStop
     };
+    const numberD =line.number
+    const firstStopD =line.firstStop
+    const lastStopD =line.lastStop
+
+    if(numberD === null|| numberD === '' || firstStopD === null || firstStopD === '' || lastStopD === null || lastStopD === ''){
+      notification.error({message:'error',description:'rellena todos los campos', duration: 5})
+    }else{
 
     LineService.update(l.id, data)
       .then(response => {
@@ -55,6 +62,7 @@ const UpdateLine = () => {
     LineService.getAll()
     navigate("/Line")
   }
+}
 
   return (
     <div>

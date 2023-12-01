@@ -1,7 +1,6 @@
 .listBody{
 padding-top: 100px;
 padding-bottom: 70px;
-
 }
 
 .elementBody{
@@ -30,16 +29,22 @@ padding-bottom: 70px;
     margin-right: 30%;
 }
 
+.buttonSchedule{
+    background-color: #7eaac7;
+}
+
 .delButton{
     background-color: red;
     color: white;
     border: none;
+    z-index: 50;
 }
 
 .updButton{
     background-color: rgb(220, 253, 3);
     color: black;
     border: none;
+    z-index: 50;
 }
 
 .buttonAdd{
