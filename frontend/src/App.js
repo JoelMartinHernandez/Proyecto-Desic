@@ -35,38 +35,40 @@ function App() {
     roles.role = newRole
   }
 
-  
+
 
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<RegisterOrLogin/>} />
-      <Route path="/register" element={<Register/>} />
-      <Route path="/login" element={<Login/>} />
-      <Route element={<PrivateRoute permittedRole='administrator' logged={logged} />}>
-        <Route path="/Line" element={<Lines/>} />
-        <Route path='/Line/:idLine/schedule' element={<Schedule/>} />
-        <Route path="/Line/:idLine/addSchedule" element={<AddSchedule/>} />
-        <Route path="/Line/:idLine/updateSchedule" element={<UpdateSchedule/>} />
-        <Route path="/Line/:idLine/listBusStop" element={<BusStopList/>} />
-        <Route path="/Line/:idLine/addBusStop" element={<AddBusStop/>}/>
-        <Route path="/Line/:idLine/updateBusStop" element={<UpdateBusStop/>} />
-        <Route path="/addLine" element={<AddLine/>} />
-        <Route path="/update" element={<UpdateLine/>}/>
-      </Route>
-      <Route element={<PrivateRoute permittedRole='user' logged={logged} />}>
-        <Route path="/user/line"/>
-      </Route>
+      <Routes>
+        <Route path="/" element={<RegisterOrLogin />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route element={<PrivateRoute permittedRole='administrator' logged={logged} />}>
+          <Route path="/Line" element={<Lines />} />
+          <Route path='/Line/:idLine/schedule' element={<Schedule />} />
+          <Route path="/Line/:idLine/addSchedule" element={<AddSchedule />} />
+          <Route path="/Line/:idLine/updateSchedule" element={<UpdateSchedule />} />
+          <Route path="/Line/:idLine/listBusStop" element={<BusStopList />} />
+          <Route path="/Line/:idLine/addBusStop" element={<AddBusStop />} />
+          <Route path="/Line/:idLine/updateBusStop" element={<UpdateBusStop />} />
+          <Route path="/addLine" element={<AddLine />} />
+          <Route path="/update" element={<UpdateLine />} />
+        </Route>
+        <Route element={<PrivateRoute permittedRole='user' logged={logged} />}>
+          <Route path="/user/line" element={<Lines />} />
+          <Route path="/user/schedule" element={<Schedule />} />
+          <Route path="/user/busStops" element={<BusStopList />} />
+        </Route>
 
 
-    </Routes>
+      </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
 
-        {/* <Route path="/" element={<RegisterOrLogin />}/>
+{/* <Route path="/" element={<RegisterOrLogin />}/>
         <Route path="/register" element={<Register />}/>
         <Route path="/login" element={<Login />}/>
         <PrivateRoute path="/home" element={<Home/>}allowedRoles={['administrator']}/>
