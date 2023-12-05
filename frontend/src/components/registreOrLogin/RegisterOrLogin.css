@@ -26,7 +26,7 @@
     align-items: center;
     width: 40%;
     margin-top: 200px;
-    background-color: #688CA4;
+    background-color: #0CC608;
     margin-left: 30%;
     margin-right: 30%;
     border: 1px solid green;
@@ -41,4 +41,5 @@
     margin-right: 30%;
     margin-top: 5%;
     border: 1px solid purple;
+    background-color: #B60404;
 }
