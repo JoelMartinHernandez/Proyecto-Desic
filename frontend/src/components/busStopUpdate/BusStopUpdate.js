@@ -2,6 +2,8 @@ import BusStopService from "../../services/busStopService/BusStopService";
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import { Button,message, Popconfirm } from "antd";
+import HeaderBusStop from "../headerBusStop/HeaderBusStop";
+import FooterBusStop from "../footerBusStop/FooterBusStop";
 
 const UpdateBusStop = () => {
     const b= JSON.parse(localStorage.getItem("busStop"))
@@ -42,6 +44,7 @@ const UpdateBusStop = () => {
   };
   return (
     <div>
+      <HeaderBusStop/>
       <div className="bodyAddLine">
         <form className="form-group" >
           <label htmlFor="Location">Localizacion</label>
@@ -74,13 +77,14 @@ const UpdateBusStop = () => {
             Guardar
           </Button>
           </Popconfirm>
-          <Button onClick={() => navigate(`/Line/${idLine}/listBusStop`)} className="btn-denegade">
+          <Button onClick={() => navigate(`/Line/${idLine}/BusStop`)} className="btn-denegade">
             Cancelar
           </Button>
         </form>
 
 
       </div>
+      <FooterBusStop/>
     </div>
   )
 

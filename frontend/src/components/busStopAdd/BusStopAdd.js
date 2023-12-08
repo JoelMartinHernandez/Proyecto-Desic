@@ -2,6 +2,8 @@ import BusStopService from "../../services/busStopService/BusStopService";
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import { Button, notification, Space } from "antd";
+import HeaderBusStop from "../headerBusStop/HeaderBusStop";
+import FooterBusStop from "../footerBusStop/FooterBusStop";
 
 const AddBusStop = () => {
 
@@ -37,6 +39,7 @@ const AddBusStop = () => {
   };
   return (
     <div>
+      <HeaderBusStop/>
       <div className="bodyAddLine">
         <form className="form-group" >
           <label htmlFor="Location">Localizacion</label>
@@ -63,13 +66,14 @@ const AddBusStop = () => {
           <Button onClick={() => saveBusStop()} className="btn btn-success">
             Guardar
           </Button>
-          <Button onClick={() => navigate(`/Line/${idLine}/listBusStop`)} className="btn-denegade">
+          <Button onClick={() => navigate(`/Line/${idLine}/BusStop`)} className="btn-denegade">
             Cancelar
           </Button>
         </form>
 
 
       </div>
+      <FooterBusStop/>
     </div>
   )
 

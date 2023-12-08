@@ -25,7 +25,9 @@ exports.create = (req, res) => {
 
 // Retrieve all busLines from the database.
 exports.findAll = (req, res) => {
-  BusStop.findAll().then(data => {
+  BusStop.findAll({where:{
+    idLine:req.params.idLine
+  }}).then(data => {
     res.send(data);
   }).catch(err => {
     res.status(500).send({

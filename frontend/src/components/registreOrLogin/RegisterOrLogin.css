@@ -25,11 +25,12 @@
     text-align: center;
     align-items: center;
     width: 40%;
+    height: 5%;
     margin-top: 200px;
     background-color: #0CC608;
     margin-left: 30%;
     margin-right: 30%;
-    border: 1px solid green;
+    border-radius: 10px;
 }
 
 .registerButtonRL{
@@ -37,9 +38,10 @@
     text-align: center;
     align-items: center;
     width: 40%;
+    height: 5%;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 5%;
-    border: 1px solid purple;
-    background-color: #B60404;
+    background-color: #0CC608;
+    border-radius: 10px;
 }
