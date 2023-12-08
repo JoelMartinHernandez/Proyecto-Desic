@@ -2,6 +2,8 @@ import ScheduleService from "../../services/scheduleService/ScheduleService";
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import { Button, message, Popconfirm } from "antd";
+import FooterSchedule from "../footerSchedule/FooterSchedule";
+import HeaderSchedule from "../headerSchedule/HeaderSchedule";
 
 const UpdateSchedule = () => {
   const s = JSON.parse(localStorage.getItem("schedule"))
@@ -39,6 +41,7 @@ const UpdateSchedule = () => {
   };
   return (
     <div>
+      <HeaderSchedule/>
       <div className="bodyAddLine">
         <form className="form-group" >
           <label htmlFor="number">Hora y minuto</label>
@@ -68,6 +71,7 @@ const UpdateSchedule = () => {
 
 
       </div>
+      <FooterSchedule/>
     </div>
   )
 

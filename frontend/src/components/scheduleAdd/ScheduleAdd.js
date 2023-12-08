@@ -2,6 +2,8 @@ import ScheduleService from "../../services/scheduleService/ScheduleService";
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import { Button, notification, Space } from "antd";
+import FooterSchedule from "../footerSchedule/FooterSchedule";
+import HeaderSchedule from "../headerSchedule/HeaderSchedule";
 
 const AddSchedule = () => {
   const [api, contextHolder] = notification.useNotification();
@@ -38,6 +40,7 @@ const AddSchedule = () => {
   };
   return (
     <div>
+      <HeaderSchedule/>
       <div className="bodyAddLine">
         <form className="form-group" >
           <label htmlFor="number">Hora y minuto</label>
@@ -58,6 +61,7 @@ const AddSchedule = () => {
           </Button>
         </form>
       </div>
+      <FooterSchedule/>
     </div>
   )
 
