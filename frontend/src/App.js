@@ -8,6 +8,7 @@ import {
   Route,
   Routes,
   BrowserRouter,
+  Navigate,
 } from 'react-router-dom';
 
 import UpdateLine from './components/updateLine/UpdateLine';
@@ -63,7 +64,6 @@ function App() {
           <Route path="/user/Line/:idLine/Schedule" element={<ScheduleU />} />
           <Route path="/user/Line/:idLine/BusStop" element={<BusStopU />} />
         </Route>
-
 
       </Routes>
     </BrowserRouter>
