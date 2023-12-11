@@ -34,5 +34,33 @@ The "BusStops" table contains the fields ID, Location, and LinesID, which is the
 ### Use cases
 ![Diagrama de casos](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/20ddb853-f22f-4040-b69c-d6bc75a1658d)
 
+# User requirement
+The aplication works in web in particular on mobile.
+> [!IMPORTANT]
+> It is possible to use the application on desktop but it is not intended for desktop use.
+
+### 1.User:
+1.1 Any user need register into the aplication.
+
+1.2 If you want to see the stops or the schedule, first select the line.
+
+### 2.Administrator:
+2.1 All the registers need the elements that are requested. that includes images.
+
+2.2 The user with the role administrator has to be assigned in the database.
+
+2.3 When deleting a line, stops and times are deleted in cascade.
+
+# Technical specifications for the server application and the APP
+The application uses a mysql server to store the logs of all tables and a backend folder in public/images to store the images themselves.
+
+In the application, if a record containing a photo is deleted, it is already programmed to delete the photo in the backend as well.
+> [!WARNING]
+>In case the backend closes normally or unexpectedly, there is no way to navigate through the frontend.
+
 # Figma
 [Enlace Figma](https://www.figma.com/file/Qs5ePGQ6fIWDLK2SWQhob9/Proyecto-Desic?type=design&node-id=0%3A1&mode=design&t=rI9LVburwdWDxmGZ-1)
+
+# Usability and Accessibility
+
+
