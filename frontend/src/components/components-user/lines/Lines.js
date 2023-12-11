@@ -2,6 +2,7 @@ import "./Lines.css";
 import React, { useState, useEffect } from "react";
 import LineService from "../../../services/linesServices/LineService";
 import { useNavigate } from "react-router-dom";
+import { Button } from "antd";
 
 const LinesU = () => {
   const [lines, setLines] = useState([]);
@@ -35,6 +36,12 @@ const LinesU = () => {
           </div>
         )
       })}
+      <Button>
+      <a href="/Documentacion_de_ayuda/Aplicacion Guaguas usuario.html" target="Blank">
+      Ayuda
+      </a>
+      </Button>
+      
     </div>
   );
 };
