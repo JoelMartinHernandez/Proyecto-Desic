@@ -30,3 +30,6 @@ The "BusStops" table contains the fields ID, Location, and LinesID, which is the
 
 ### Class diagram
 ![Diagrama de clases2 Desic](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/68aa25d2-4986-41cc-8687-fc7c62cd539f)
+
+### Use cases
+![Diagrama de casos](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/20ddb853-f22f-4040-b69c-d6bc75a1658d)
