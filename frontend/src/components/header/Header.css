@@ -27,3 +27,12 @@ display: flex;
 justify-content:center;
 align-items:center;
 }
+
+.helpHeader{
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    width: 10%;
+    height: 30%;
+    background-color: rgb(177, 177, 177);
+}

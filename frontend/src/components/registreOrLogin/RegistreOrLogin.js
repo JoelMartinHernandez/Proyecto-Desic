@@ -16,6 +16,13 @@ const RegisterOrLogin = () => {
       <div className="registerButtonRL" onClick={() => navigate("/register")}>
         <p>Registrarse</p>
       </div>
+      <div>
+        <p>
+        <a href="/Documentacion_de_ayuda/Aplicacion Guaguas usuario.html" target="Blank">
+          ¿Necesitas ayuda?
+        </a>
+        </p>
+      </div>
     </div>
   );
 }
