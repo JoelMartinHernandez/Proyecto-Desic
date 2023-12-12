@@ -34,6 +34,25 @@ The "BusStops" table contains the fields ID, Location, and LinesID, which is the
 ### Use cases
 ![Diagrama de casos](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/20ddb853-f22f-4040-b69c-d6bc75a1658d)
 
+# Endpoints
+
+### Lines endpoint
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/7412c19b-985a-4fab-b032-81f5f0676647)
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/5660793e-ee62-4a3a-88b3-4eb1b1bb24cb)
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/2b38332a-4d69-4431-89bc-e8994458d443)
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/ae7e57c2-64a3-4814-9467-15a623d2c588)
+
+### Users endpoint
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/273c7ac3-ef4e-4fda-b4bd-cc1c4d287ecc)
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/0ec5134e-6156-4108-95ec-1d8687d21648)
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/b19d2905-cd7f-451a-aad7-63a34b7b8688)
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/f43b1bbe-701a-4517-a489-73d935d4f0d7)
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/b3a2703f-b1b6-415b-a137-7f3c22ded135)
+
+
+
+
+
 # User requirement
 The aplication works in web in particular on mobile.
 > [!IMPORTANT]
