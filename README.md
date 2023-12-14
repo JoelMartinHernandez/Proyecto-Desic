@@ -93,34 +93,34 @@ In the application, if a record containing a photo is deleted, it is already pro
 
 ### Prevision of adding elements with empty fields
 The administrators at the time of adding the data, not to make mistakes of leaving some missing field, thanks to the warning that is coded that detects if there is some empty field and blocks the function of creation.
-Example:
+Example:\
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/d750c08c-eadc-46e0-9667-84e5508ee43f)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/92d5ea68-ee62-43d8-aeff-4da1c7ba0cf3)
 
 The same will happen with the update of any element, if it detects an empty field it will not update the element.
 
 ### Warning to delete item
-When attempting to delete an item, the administrator will be asked if they are sure they want to delete the item.
+When attempting to delete an item, the administrator will be asked if they are sure they want to delete the item.\
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/eaecd54e-b123-4e98-bcad-8f29599e58ac)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/aaefcf95-cc2c-4a76-a6e7-60a37f86f534)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/790eb410-b494-409b-9e0e-2ad01ba034c7)
 
 ### Warning when logging out
-When attempting to logout, the user will be asked if they are sure they want to logout.
+When attempting to logout, the user will be asked if they are sure they want to logout.\
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/100b7ed0-9925-434b-9abe-a548f69e7756)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/0c4e6562-756c-42f4-898c-b420a9620adb)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/4d27ac94-3c97-4c35-8992-4f46dd907ab5)
 
 ### Large icons
-The application uses big icons for ease of use on mobile devices, as well as buttons that are not glued together so as not to produce a click failure.
+The application uses big icons for ease of use on mobile devices, as well as buttons that are not glued together so as not to produce a click failure.\
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/b7e9d287-4463-4468-97ce-69c823a13b0b)
 
 ### Easy access to help documentation
-When logging in there is a link that will open the user help documents.
+When logging in there is a link that will open the user help documents.\
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/029c3002-6859-4d66-95c6-758aae334a26)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/0541ed9f-ca4f-43fb-bfa8-0d665608eaaa)
 
-But if an administrator wants to access the administrator's help, they must first log in as an administrator and at the top right of the page, they will find an information icon which, if clicked, will direct them to the administrator's help page.
+But if an administrator wants to access the administrator's help, they must first log in as an administrator and at the top right of the page, they will find an information icon which, if clicked, will direct them to the administrator's help page.\
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/daa0832a-0343-4804-abde-96b40de5ab4b)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/650ecd24-eeb3-4be1-b59b-a2ace1d55913)
 
@@ -145,3 +145,26 @@ running npm start on the backend will create the respective tables.
 When you run npm start on the frontend, the application will be opened.
 > [!NOTE]
 > When you open only the application without the backend, as it is a web application, it is normal that it does not work because you can not log in.
+
+
+## User/Technician installation
+To install the application, it is necessary to access the Frontend folder of the project folder.\
+Once accessed the folder, enter the command in the terminal "npm install" to install the necessary files, and after installing everything run the command "npm start" to open the application.
+
+# User manual
+To install the application, it is necessary to access the Frontend folder of the project folder.\
+Once accessed the folder, enter the command in the terminal "npm install" to install the necessary files, and after installing everything run the command "npm start" to open the application.
+
+# Technological Stack
+Backend:
+  -Node.js\
+  -Sequelize\
+  -Multer\
+  -Bcrypt\
+
+Frontend:
+  -React\
+  -antd\
+  -jwt-decode\
+
+# Planificación
