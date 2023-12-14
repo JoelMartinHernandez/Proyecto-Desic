@@ -154,8 +154,16 @@ To install the application, it is necessary to access the Frontend folder of the
 Once accessed the folder, enter the command in the terminal "npm install" to install the necessary files, and after installing everything run the command "npm start" to open the application.
 
 # User manual
-To install the application, it is necessary to access the Frontend folder of the project folder.\
-Once accessed the folder, enter the command in the terminal "npm install" to install the necessary files, and after installing everything run the command "npm start" to open the application.
+To begin using the application, it is necessary to have a registered account. If you don't have one, you can click on 'Register' to sign up for our application. If you already have an account, you can use 'Log In' with your existing credentials.
+
+The application is divided into 3 main sections:
+
+1. Lines
+   - In the main view, you will see all the lines that are currently in operation.
+2. Schedule
+   - By selecting a line, you can view the departure times associated with the selected line in this view.
+3. Stops
+   - By selecting a line, you can view the stops along with their images associated with the selected line in this view.
 
 # Technological Stack
 
@@ -170,14 +178,19 @@ Once accessed the folder, enter the command in the terminal "npm install" to ins
   * [![HTML5][Html5]][Html5-url]
   * [![CSS3][Css3]][Css3-url]
 
-# Repositorio
- [![GitHub][Github]][Github-url]
+# Repository
+ ![GitHub]
+ [Enlace del GitHub](https://github.com/JoelMartinHernandez/Proyecto-Desic)
 
-# Planificación
+# Planning
 
 To plan my project, I have used the Scrum methodology.
 
-# Conclusiones
+# Conclusions
+
+The application, although it may seem basic, provides users with the essential information they need when looking for basic bus information. It is quite intuitive for administrators as well.
+
+The project has contributed to my growth as a programmer, allowing me to develop new knowledge about backends and React. I gained insights into topics such as tokens and private addresses.
 
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
