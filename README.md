@@ -156,15 +156,39 @@ To install the application, it is necessary to access the Frontend folder of the
 Once accessed the folder, enter the command in the terminal "npm install" to install the necessary files, and after installing everything run the command "npm start" to open the application.
 
 # Technological Stack
-Backend:
-  -Node.js\
-  -Sequelize\
-  -Multer\
-  -Bcrypt\
 
+Backend:
+  * [![Express][Express.js]][Express-url]
+  * [![Node][Node.js]][Node-url]
+  * [![MySQL][Mysql]][Mysql-url]
+  
 Frontend:
-  -React\
-  -antd\
-  -jwt-decode\
+  * [![React][React.js]][React-url]
+  * [![JavaScript][Javascript]][Javascript-url]
+  * [![HTML5][Html5]][Html5-url]
+  * [![CSS3][Css3]][Css3-url]
+
 
 # Planificación
+
+Para planificarme a la hora de hacer el proyecto, he usado la metodologia scrum
+
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[Node.js]: https://img.shields.io/badge/Node.js-<18.17>-green?style=for-the-badge&logo=node.js&logoColor=white
+[javascript]:https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[Express.js]: https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=
+[Mysql]:https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white
+[Javascript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[Html5]:https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[Css3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[React-url]: https://reactjs.org/
+[Node-url]: https://nodejs.org/
+[javascript-url]: https://developer.mozilla.org/es/docs/Web/JavaScript
+[Express-url]: https://expressjs.com
+[Mysql-url]: https://www.mysql.com
+[Scrum-url]: https://www.scrum.org/
+[Github-url]: https://github.com/your-username/your-repository
+[Javascript-url]:https://developer.mozilla.org/es/docs/Web/JavaScript
+[Html5-url]:https://developer.mozilla.org/en-US/docs/Glossary/HTML5
+[Css3-url]:https://developer.mozilla.org/en-US/docs/Web/CSS
