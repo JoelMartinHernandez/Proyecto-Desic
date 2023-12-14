@@ -124,6 +124,8 @@ But if an administrator wants to access the administrator's help, they must firs
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/daa0832a-0343-4804-abde-96b40de5ab4b)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/650ecd24-eeb3-4be1-b59b-a2ace1d55913)
 
+Colores llamativos para resaltar lo interactuable de la aplicacion
+
 # Manuals
 
 ## Developer installation
@@ -157,21 +159,25 @@ Once accessed the folder, enter the command in the terminal "npm install" to ins
 
 # Technological Stack
 
-Backend:
+### Backend:
   * [![Express][Express.js]][Express-url]
   * [![Node][Node.js]][Node-url]
   * [![MySQL][Mysql]][Mysql-url]
   
-Frontend:
+### Frontend:
   * [![React][React.js]][React-url]
   * [![JavaScript][Javascript]][Javascript-url]
   * [![HTML5][Html5]][Html5-url]
   * [![CSS3][Css3]][Css3-url]
 
+# Repositorio
+ [![GitHub][Github]][Github-url]
 
 # Planificación
 
-Para planificarme a la hora de hacer el proyecto, he usado la metodologia scrum
+To plan my project, I have used the Scrum methodology.
+
+# Conclusiones
 
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
@@ -182,6 +188,7 @@ Para planificarme a la hora de hacer el proyecto, he usado la metodologia scrum
 [Javascript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [Html5]:https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [Css3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[Github]:https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
 [React-url]: https://reactjs.org/
 [Node-url]: https://nodejs.org/
 [javascript-url]: https://developer.mozilla.org/es/docs/Web/JavaScript
@@ -192,3 +199,4 @@ Para planificarme a la hora de hacer el proyecto, he usado la metodologia scrum
 [Javascript-url]:https://developer.mozilla.org/es/docs/Web/JavaScript
 [Html5-url]:https://developer.mozilla.org/en-US/docs/Glossary/HTML5
 [Css3-url]:https://developer.mozilla.org/en-US/docs/Web/CSS
+[Github-url]: https://github.com/JoelMartinHernandez/Proyecto-Desic
