@@ -120,12 +120,28 @@ When logging in there is a link that will open the user help documents.
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/029c3002-6859-4d66-95c6-758aae334a26)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/0541ed9f-ca4f-43fb-bfa8-0d665608eaaa)
 
-
-# Manuals
-
-## Instalacion del desarrollador
-
 But if an administrator wants to access the administrator's help, they must first log in as an administrator and at the top right of the page, they will find an information icon which, if clicked, will direct them to the administrator's help page.
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/daa0832a-0343-4804-abde-96b40de5ab4b)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/650ecd24-eeb3-4be1-b59b-a2ace1d55913)
 
+# Manuals
+
+## Developer installation
+Before executing the file it is necessary to have mysql installed and for help installing the Backend and Frontend I recommend the use of Visual Studio Code.
+
+Once the above is done, it is time to install the backend. Located in the root folder of the project, we go to the Backend folder from the terminal and type "npm install" to install all the necessary packages to run the Backend.
+
+The next step is to create an .env file where you fill in the corresponding mysql information. You have anyway an example file.
+
+Now to install the Frontend, follow the same steps as above, but instead of going to the Backend folder, this time we go to the frontend folder and follow the same "npm install" step.
+
+If you now want to start everything you need to have 2 terminals, one located in the Backend and the other in the Frontend. Once located in both folders, run the command "npm start".\
+running npm start on the backend will create the respective tables.
+
+> [!WARNING]
+> Be careful with the following code, if you don't want to delete all the records make sure you have this code without commenting it out.
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/2fb26faf-f25b-48c5-8b7c-dd85ff016272)
+
+When you run npm start on the frontend, the application will be opened.
+> [!NOTE]
+> When you open only the application without the backend, as it is a web application, it is normal that it does not work because you can not log in.
