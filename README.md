@@ -124,20 +124,24 @@ But if an administrator wants to access the administrator's help, they must firs
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/daa0832a-0343-4804-abde-96b40de5ab4b)
 ![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/650ecd24-eeb3-4be1-b59b-a2ace1d55913)
 
-Colores llamativos para resaltar lo interactuable de la aplicacion
+### Colors
+Bold colours to highlight the interactivity of the application.
+
+### Registration with already registered data
+If the user clicks on register by accident and enters the same login details, he will be logged in that way.
 
 # Manuals
 
 ## Developer installation
-Before executing the file it is necessary to have mysql installed and for help installing the Backend and Frontend I recommend the use of Visual Studio Code.
+Before executing the file it is necessary to have** mysql installed** and for help installing the Backend and Frontend I recommend the use of Visual Studio Code.
 
-Once the above is done, it is time to install the backend. Located in the root folder of the project, we go to the Backend folder from the terminal and type "npm install" to install all the necessary packages to run the Backend.
+Once the above is done, it is time to install the backend. Located in the root folder of the project, we go to the **Backend folder** from the terminal and type "**npm install**" to install all the necessary packages to run the Backend.
 
-The next step is to create an .env file where you fill in the corresponding mysql information. You have anyway an example file.
+The next step is to **create an .env** file where you fill in the corresponding mysql information. You have anyway an example file.
 
-Now to install the Frontend, follow the same steps as above, but instead of going to the Backend folder, this time we go to the frontend folder and follow the same "npm install" step.
+Now to install the Frontend, follow the same steps as above, but instead of going to the Backend folder, this time we go to the **frontend folder** and follow the same "**npm install**" step.
 
-If you now want to start everything you need to have 2 terminals, one located in the Backend and the other in the Frontend. Once located in both folders, run the command "npm start".\
+If you now want to start everything you need to **have 2 terminals**, one located in the **Backend and the other in the Frontend**. Once located in both folders, run the command "**npm start**".\
 running npm start on the backend will create the respective tables.
 
 > [!WARNING]
@@ -151,7 +155,7 @@ When you run npm start on the frontend, the application will be opened.
 
 ## User/Technician installation
 To install the application, it is necessary to access the Frontend folder of the project folder.\
-Once accessed the folder, enter the command in the terminal "npm install" to install the necessary files, and after installing everything run the command "npm start" to open the application.
+Once accessed the folder, enter the command in the terminal "**npm install**" to install the necessary files, and after installing everything run the command "**npm start**" to open the application.
 
 # User manual
 To begin using the application, it is necessary to have a registered account. If you don't have one, you can click on 'Register' to sign up for our application. If you already have an account, you can use 'Log In' with your existing credentials.
