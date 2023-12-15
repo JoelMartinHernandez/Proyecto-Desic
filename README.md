@@ -182,6 +182,13 @@ The application is divided into 3 main sections:
   * [![HTML5][Html5]][Html5-url]
   * [![CSS3][Css3]][Css3-url]
 
+
+# type of application
+My application is progressive. It can be used on mobile phones but depends on an external server.
+
+# Why this type of application?
+I use this format because usually the information of each line and stop is updated every few days so it is better to rely on a server. Then another point is that as the information is constantly changing, it is not profitable to store information locally, making the application heavier.
+
 # Repository
  ![GitHub]
  [Enlace del GitHub](https://github.com/JoelMartinHernandez/Proyecto-Desic)
