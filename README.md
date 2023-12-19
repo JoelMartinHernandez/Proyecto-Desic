@@ -90,6 +90,17 @@ In the application, if a record containing a photo is deleted, it is already pro
 [Enlace Figma](https://www.figma.com/file/Qs5ePGQ6fIWDLK2SWQhob9/Proyecto-Desic?type=design&node-id=0%3A1&mode=design&t=rI9LVburwdWDxmGZ-1)
 
 # Usability and Accessibility
+### Easy to use
+The application is designed so that with the little information you see on the screen, you can clearly understand the information given without overloading the screen with non-essential information for the user.
+
+### fulfils the objective in an efficient way
+Related to the previous point, the application gives the necessary information when looking at the information of a bus line.
+
+### readable text from the start
+The text is suitable for all types of devices, so you don't have to strain your eyes anymore.
+
+### Security of information
+The information is stored securely, as it is encrypted in the database.
 
 ### Prevision of adding elements with empty fields
 The administrators at the time of adding the data, not to make mistakes of leaving some missing field, thanks to the warning that is coded that detects if there is some empty field and blocks the function of creation.
