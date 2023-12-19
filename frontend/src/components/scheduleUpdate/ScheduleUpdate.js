@@ -1,7 +1,7 @@
 import ScheduleService from "../../services/scheduleService/ScheduleService";
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useRef, useState } from "react";
-import { Button, message, Popconfirm } from "antd";
+import { Button, message, Popconfirm, notification } from "antd";
 import FooterSchedule from "../footerSchedule/FooterSchedule";
 import HeaderSchedule from "../headerSchedule/HeaderSchedule";
 
@@ -31,7 +31,7 @@ const UpdateSchedule = () => {
     const time = schedulesRef.current.value
 
     if(time === null|| time === ''){
-      notification.error({message:'error',description:'rellena todos los campos', duration: 5})
+      notification.error({message:'Ha ocurrido un error',description:'Comprueba que todos los campos esten rellenados', duration: 5})
     }else{
     ScheduleService.update(s.id, data)
       .then(response => {

@@ -1,7 +1,5 @@
 import './Header.css'
 import help from '../../assets/icons/help.svg';
-import dropdown from '../../assets/icons/dropdown.svg';
-import options from '../../assets/icons/options.svg';
 
 function Header() {
   return (

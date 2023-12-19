@@ -1,7 +1,7 @@
 import BusStopService from "../../services/busStopService/BusStopService";
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useRef, useState } from "react";
-import { Button,message, Popconfirm } from "antd";
+import { Button,message, Popconfirm, notification } from "antd";
 import HeaderBusStop from "../headerBusStop/HeaderBusStop";
 import FooterBusStop from "../footerBusStop/FooterBusStop";
 
@@ -34,7 +34,7 @@ const UpdateBusStop = () => {
     const fileD = fileInputRef.current.value
  
      if(locationD === null|| locationD === '' || fileD === null || fileD === ''){
-       notification.error({message:'error',description:'rellena todos los campos', duration: 5})
+      notification.error({message:'Ha ocurrido un error',description:'Comprueba que todos los campos esten rellenados', duration: 5})
      }else{
     BusStopService.update(b.id,data)
       .then(response => {

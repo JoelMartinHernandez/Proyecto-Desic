@@ -30,7 +30,7 @@ const AddSchedule = () => {
     const time = schedulesRef.current.value
 
     if(time === null|| time === ''){
-      notification.error({message:'error',description:'rellena todos los campos', duration: 5})
+      notification.error({message:'Ha ocurrido un error',description:'Comprueba que todos los campos esten rellenados', duration: 5})
     }else{
     ScheduleService.create(data)
       .then(response => {
