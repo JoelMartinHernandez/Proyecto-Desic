@@ -4,7 +4,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import LineService from "../../services/linesServices/LineService";
 import { useNavigate } from "react-router-dom";
-import { Button, message, Popconfirm } from 'antd';
+import { Button, message, Popconfirm, notification } from 'antd';
 
 const UpdateLine = () => {
   const l = JSON.parse(localStorage.getItem("linea"))
@@ -46,7 +46,7 @@ const UpdateLine = () => {
     const lastStopD =line.lastStop
 
     if(numberD === null|| numberD === '' || firstStopD === null || firstStopD === '' || lastStopD === null || lastStopD === ''){
-      notification.error({message:'error',description:'rellena todos los campos', duration: 5})
+      notification.error({message:'Ha ocurrido un error',description:'Comprueba que todos los campos esten rellenados', duration: 5})
     }else{
 
     LineService.update(l.id, data)
