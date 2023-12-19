@@ -35,7 +35,7 @@ const AddLine = () => {
     const lastStopD =line.lastStop
 
     if(numberD === null|| numberD === '' || firstStopD === null || firstStopD === '' || lastStopD === null || lastStopD === ''){
-      notification.error({message:'error',description:'rellena todos los campos', duration: 5})
+      notification.error({message:'Ha ocurrido un error',description:'Comprueba que todos los campos esten rellenados', duration: 5})
     }else{
     LineService.create(data)
     .then(response => {
