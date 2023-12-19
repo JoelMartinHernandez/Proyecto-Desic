@@ -91,16 +91,33 @@ In the application, if a record containing a photo is deleted, it is already pro
 
 # Usability and Accessibility
 ### Easy to use
-The application is designed so that with the little information you see on the screen, you can clearly understand the information given without overloading the screen with non-essential information for the user.
+The application is designed so that with the little information you see on the screen, you can clearly understand the information given without overloading the screen with non-essential information for the user.\
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/1e288c55-760d-4bd7-8e98-1a8d3c48f440)
+In this case the highlighting colours and icons will be highlighted knowing that they are interactive.\
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/e4759462-2a15-4577-b3d6-109afc0ecce0)
+
 
 ### fulfils the objective in an efficient way
-Related to the previous point, the application gives the necessary information when looking at the information of a bus line.
+Related to the previous point, the application gives the necessary information when looking at the information of a bus line.\
+Lines:\
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/5c56b5bc-ad21-4382-a0c5-a3db9a7552ef)
+Schedule:\
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/e9c250e3-de02-45a4-9d9d-2e43e08764dc)
+Bus Stop:\
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/dedebdef-580d-43eb-beb7-46f678f7e1a1)
+
 
 ### readable text from the start
-The text is suitable for all types of devices, so you don't have to strain your eyes anymore.
+The text is suitable for all types of devices, so you don't have to strain your eyes anymore.\
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/9bc61a5d-16ed-47af-99f2-6ac25cd9939a)
+In addition, contrasting colours are used.
 
 ### Security of information
-The information is stored securely, as it is encrypted in the database.
+The information is stored securely, as it is encrypted in the database.\
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/6ccc0c90-fafb-4f2c-8ea9-d6664f7bdf6f)
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/d574bd03-e946-41c0-973a-76b3dd0cd2ce)
+![image](https://github.com/JoelMartinHernandez/Proyecto-Desic/assets/131310480/d34ae976-fdf6-47f9-8dc6-38ab1e7a3cd8)
+
 
 ### Prevision of adding elements with empty fields
 The administrators at the time of adding the data, not to make mistakes of leaving some missing field, thanks to the warning that is coded that detects if there is some empty field and blocks the function of creation.
