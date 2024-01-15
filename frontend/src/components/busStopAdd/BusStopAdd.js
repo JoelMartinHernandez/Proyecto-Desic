@@ -32,7 +32,7 @@ const AddBusStop = () => {
     }else{
       BusStopService.create(data)
       .then(response => {
-        navigate(`/Line/${idLine}/listBusStop`)
+        navigate(`/Line/${idLine}/BusStop`)
       })
     };
 

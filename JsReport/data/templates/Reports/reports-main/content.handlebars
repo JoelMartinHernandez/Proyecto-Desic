@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Lines</h3>
+        <table class='table striped'>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Number</th>
+                    <th>FirstStop</th>
+                    <th>LastStop</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each lines}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{number}}</td>
+                    <td>{{firstStop}}</td>
+                    <td>{{lastStop}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    <div>
+
+    </div>
+    <h3>Bus Stops</h3>
+    <div>
+        <table class='table striped'>
+            <thead>
+                <tr>
+                    <th>idLine</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each busstops}}
+                <tr>
+                    <td>{{idLine}}</td>
+                    <td>{{Location}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h3>Total bus stops</h3>
+        total bus stops:{{totalLocations}}
+    </div>
+
+
+</body>
+</html>

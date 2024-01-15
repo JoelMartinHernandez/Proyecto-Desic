@@ -28,6 +28,7 @@ import BusStop from "./pages/busStop/BusStop";
 import LinesU from "./pages/pages_users/lines_users/lines_users";
 import ScheduleU from "./pages/pages_users/schedule_users/schedule_users";
 import BusStopU from "./pages/pages_users/busStop_users/busStop_users";
+import Reports from "./components/reports/Reports";
 
 function App() {
 
@@ -58,6 +59,7 @@ function App() {
           <Route path="/Line/:idLine/updateBusStop" element={<UpdateBusStop />} />
           <Route path="/addLine" element={<AddLine />} />
           <Route path="/update" element={<UpdateLine />} />
+          <Route path="/Reports" element={<Reports />} />
         </Route>
         <Route element={<PrivateRoute permittedRole='user' logged={logged} />}>
           <Route path="/user/Line" element={<LinesU />} />

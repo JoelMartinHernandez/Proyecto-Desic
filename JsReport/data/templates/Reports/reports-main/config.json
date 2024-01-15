@@ -1,0 +1,23 @@
+{
+    "name": "reports-main",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "data": null,
+    "shortid": "_51B-3VIey",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1704913649302
+    },
+    "modificationDate": {
+        "$$date": 1705342666417
+    },
+    "_id": "8fNDeBG8cZT8oHV8",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "vVn-6F0Ydc"
+        }
+    ]
+}

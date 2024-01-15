@@ -1,0 +1,13 @@
+{
+    "name": "reports-script",
+    "scope": "template",
+    "shortid": "vVn-6F0Ydc",
+    "creationDate": {
+        "$$date": 1704829135850
+    },
+    "modificationDate": {
+        "$$date": 1705076000680
+    },
+    "_id": "xseZKIjmIKEIO0eN",
+    "$entitySet": "scripts"
+}
